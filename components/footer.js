@@ -6,11 +6,9 @@ class AppFooter extends HTMLElement {
           <nav class="footer-nav" aria-label="Weitere Seiten">
             <a href="index.html">Startseite</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="chorleben.html#chorleben-termine">Chorintern</a>
-            <span class="sep" aria-hidden="true">|</span>
             <a href="leitung.html">Leitung</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="unterstuetzung.html">Unterstützung</a>
+            <a href="unterstuetzung.html">Unterstützen</a>
             <span class="sep" aria-hidden="true">|</span>
             <a href="impressum.html">Impressum</a>
           </nav>
