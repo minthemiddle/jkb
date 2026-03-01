@@ -108,7 +108,7 @@ app-pill-label {
 }
 
 app-navbar {
-  min-height: clamp(13rem, 22vw, 17rem);
+  min-height: clamp(10.8rem, 16vw, 14.2rem);
 }
 
 app-current-concert {

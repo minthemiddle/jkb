@@ -10,6 +10,8 @@ class AppFooter extends HTMLElement {
             <span class="sep" aria-hidden="true">|</span>
             <a href="leitung.html">Leitung</a>
             <span class="sep" aria-hidden="true">|</span>
+            <a href="stimmbildung.html">Stimmbildung</a>
+            <span class="sep" aria-hidden="true">|</span>
             <a href="unterstuetzung.html">Unterstützen</a>
             <span class="sep" aria-hidden="true">|</span>
             <a href="impressum.html">Impressum</a>

@@ -29,8 +29,6 @@ class AppNavbar extends HTMLElement {
             ${link('eindruecke.html', 'Eindrücke')}
             <span class="sep" aria-hidden="true">|</span>
             ${link('leitung.html', 'Leitung')}
-            <span class="sep" aria-hidden="true">|</span>  
-            ${link('willkommen.html', 'Willkommen')}
             <span class="sep" aria-hidden="true">|</span>
             <button class="news-toggle-btn" type="button" aria-label="Suche-Hinweis umschalten" title="Suche-Hinweis umschalten">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true" focusable="false">
