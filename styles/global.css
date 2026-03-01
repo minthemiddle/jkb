@@ -639,8 +639,42 @@ app-current-concert + .site-main {
   }
 
   .nav {
-    font-size: clamp(1rem, 5.8vw, 1.35rem);
-    line-height: 1.1;
+    font-size: clamp(0.98rem, 4.3vw, 1.2rem);
+    line-height: 1.15;
+    gap: 0.42rem 0.48rem;
+    margin-top: 0.9rem;
+    align-items: stretch;
+  }
+
+  .nav .sep {
+    display: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    padding: 0.26rem 0.46rem;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus-visible,
+  .nav-link.is-active {
+    background: rgba(255, 255, 255, 0.14);
+    text-decoration: none;
+  }
+
+  .concert-expand-btn {
+    order: -999 !important;
+    margin-left: 0 !important;
+    margin-right: 0.45rem !important;
+    align-self: center;
+    padding-left: 0;
+  }
+
+  .concert-expand-btn svg {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .footer-nav {
