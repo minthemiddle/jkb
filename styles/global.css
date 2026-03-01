@@ -69,6 +69,7 @@ img {
 
 app-navbar,
 app-current-concert,
+app-news-banner,
 .site-main,
 app-footer {
   display: block;
@@ -118,6 +119,15 @@ app-current-concert {
   opacity: 1;
   transform: translateY(0);
   transition: max-height 260ms ease, opacity 180ms ease, transform 220ms ease;
+}
+
+app-news-banner {
+  padding-inline: var(--pad);
+  overflow: hidden;
+  max-height: 6rem;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height 240ms ease, opacity 180ms ease, transform 220ms ease;
 }
 
 app-footer {
@@ -252,8 +262,70 @@ app-footer {
   text-decoration-color: #fff;
 }
 
+.news-banner {
+  position: relative;
+  margin: 0.15rem 0 0.55rem;
+  padding: 0.52rem 2rem 0.52rem 0.6rem;
+  border: 3px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.news-banner-text {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  font-size: clamp(0.94rem, 1.35vw, 1.05rem);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.news-banner-icon {
+  width: 1.05em;
+  height: 1.05em;
+  flex: none;
+}
+
+.news-collapse-btn {
+  position: absolute;
+  top: 0.32rem;
+  right: 0.34rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+
+.news-collapse-btn svg {
+  width: 0.92rem;
+  height: 0.92rem;
+}
+
+.news-collapse-btn:hover,
+.news-collapse-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.news-banner-link {
+  font-weight: 700;
+  text-decoration-color: rgba(255, 255, 255, 0.78);
+}
+
+.news-banner-link:hover,
+.news-banner-link:focus-visible {
+  text-decoration-color: #fff;
+}
+
 .concert-collapse-btn,
-.concert-expand-btn {
+.concert-expand-btn,
+.news-toggle-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -275,7 +347,8 @@ app-footer {
 }
 
 .concert-collapse-btn svg,
-.concert-expand-btn svg {
+.concert-expand-btn svg,
+.news-toggle-btn svg {
   width: 1em;
   height: 1em;
 }
@@ -283,7 +356,9 @@ app-footer {
 .concert-collapse-btn:hover,
 .concert-collapse-btn:focus-visible,
 .concert-expand-btn:hover,
-.concert-expand-btn:focus-visible {
+.concert-expand-btn:focus-visible,
+.news-toggle-btn:hover,
+.news-toggle-btn:focus-visible {
   background: rgba(255, 255, 255, 0.14);
 }
 
@@ -300,6 +375,21 @@ app-footer {
 .concert-expand-btn svg {
   width: 1.65rem;
   height: 1.65rem;
+}
+
+.news-toggle-btn {
+  width: auto;
+  height: auto;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  margin-right: 0.35rem;
+  padding: 0;
+}
+
+.news-toggle-btn svg {
+  width: 1.38rem;
+  height: 1.38rem;
 }
 
 .concert-collapse-btn svg path {
@@ -319,6 +409,21 @@ body.concert-collapsed .concert-collapse-btn svg {
   transform: rotate(180deg);
 }
 
+body.news-collapsed app-news-banner {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-0.35rem);
+  pointer-events: none;
+}
+
+body.concert-collapsed:not(.news-collapsed) app-news-banner {
+  padding-top: 0.35rem;
+}
+
+body.concert-collapsed.news-collapsed .site-main {
+  padding-top: clamp(0.55rem, 1.2vw, 0.8rem);
+}
+
 .site-main {
   padding-top: clamp(0.8rem, 2vw, 1.35rem);
   padding-right: var(--pad);
@@ -326,6 +431,10 @@ body.concert-collapsed .concert-collapse-btn svg {
 }
 
 app-current-concert + .site-main {
+  padding-top: 0;
+}
+
+app-news-banner + .site-main {
   padding-top: 0;
 }
 
@@ -677,6 +786,11 @@ app-current-concert + .site-main {
     height: 1.5rem;
   }
 
+  .news-toggle-btn svg {
+    width: 1.34rem;
+    height: 1.34rem;
+  }
+
   .footer-nav {
     font-size: 0.95rem;
     line-height: 1.2;
@@ -685,6 +799,11 @@ app-current-concert + .site-main {
   .event {
     margin: 0.9rem 0;
     padding: 0.9rem;
+  }
+
+  .news-banner {
+    margin-top: 0.1rem;
+    margin-bottom: 0.45rem;
   }
 
   .concert-row {
