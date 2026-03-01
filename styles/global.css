@@ -4,7 +4,7 @@
        url("../fonts/gt-walsheim-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
        url("../fonts/gt-walsheim-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  font-display: optional;
 }
 
 :root {
@@ -25,8 +25,13 @@
   --line-soft: rgba(255, 255, 255, 0.35);
   --wrap: min(1040px, calc(100vw - 3rem));
   --pad: clamp(1.2rem, 4vw, 2.2rem);
-  --prose-size: clamp(1.58rem, 3.4vw, 2.25rem);
-  --nav-size: clamp(1.14rem, 2.3vw, 1.55rem);
+  --prose-width: min(78ch, 100%);
+  --prose-size: clamp(1.34rem, 2.1vw, 1.9rem);
+  --lead-size: clamp(1.86rem, 3.6vw, 2.7rem);
+  --h1-size: clamp(2.75rem, 6.4vw, 4.4rem);
+  --h2-size: clamp(2rem, 4.3vw, 3rem);
+  --h3-size: clamp(1.58rem, 2.8vw, 2.05rem);
+  --nav-size: clamp(1.06rem, 1.95vw, 1.48rem);
   --event-width: clamp(42rem, 72vw, 58rem);
   --font: "GT Walsheim", "Avenir Next", "Segoe UI", sans-serif;
   --section-gap: clamp(0.95rem, 2vw, 1.35rem);
@@ -70,6 +75,19 @@ app-footer {
   width: var(--wrap);
   margin-inline: auto;
   background: var(--bg);
+}
+
+app-navbar {
+  min-height: clamp(11rem, 19vw, 15rem);
+}
+
+app-current-concert {
+  min-height: clamp(12rem, 20vw, 16rem);
+  padding-inline: var(--pad);
+}
+
+app-footer {
+  min-height: clamp(10rem, 16vw, 13rem);
 }
 
 .site-header {
@@ -125,16 +143,29 @@ app-footer {
 
 .event {
   border: 3px solid var(--line);
-  max-width: var(--event-width);
-  margin: var(--section-gap) auto var(--section-gap) 0;
+  max-width: var(--prose-width);
+  margin: var(--section-gap) 0;
   padding: clamp(1rem, 2.7vw, 1.7rem);
 }
 
-.event--compact {
-  max-width: 100%;
-  margin: 0 0 1rem;
-  padding: 0.9rem 1rem;
-  border-width: 2px;
+.event-grid {
+  display: grid;
+  grid-template-columns: minmax(20rem, 1fr) minmax(14rem, 0.55fr);
+  gap: clamp(1.2rem, 2.6vw, 2.8rem);
+}
+
+.event-next {
+  align-self: start;
+  border-left: 1px solid var(--line-soft);
+  padding-left: clamp(0.95rem, 2vw, 1.3rem);
+}
+
+.event-next-title {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.1rem, 2.1vw, 1.5rem);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.012em;
 }
 
 .kicker {
@@ -176,7 +207,7 @@ app-footer {
 
 .site-main {
   padding-top: clamp(0.8rem, 2vw, 1.35rem);
-  padding-right: clamp(8.5rem, 17vw, 11rem);
+  padding-right: var(--pad);
   padding-bottom: clamp(2.8rem, 6vw, 4.6rem);
 }
 
@@ -185,9 +216,10 @@ app-current-concert + .site-main {
 }
 
 .content {
+  max-width: var(--prose-width);
   font-size: var(--prose-size);
-  line-height: 1.24;
-  letter-spacing: -0.01em;
+  line-height: 1.28;
+  letter-spacing: -0.004em;
 }
 
 .content > * {
@@ -195,22 +227,35 @@ app-current-concert + .site-main {
 }
 
 .content > * + * {
-  margin-top: 0.82em;
+  margin-top: 0.9em;
+}
+
+.content > p:first-of-type:not(.section-links) {
+  font-size: var(--lead-size);
+  line-height: 1.22;
+  letter-spacing: -0.012em;
 }
 
 .content h1,
 .content h2,
 .content h3,
 .content h4 {
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  margin-top: 1.05em;
-  margin-bottom: 0.38em;
+  line-height: 1.02;
+  letter-spacing: -0.016em;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  text-wrap: balance;
 }
 
-.content h1 { font-size: clamp(2.1rem, 6.3vw, 4rem); }
-.content h2 { font-size: clamp(1.8rem, 5vw, 3rem); }
-.content h3 { font-size: clamp(1.45rem, 3.6vw, 2.2rem); }
+.content h1 { font-size: var(--h1-size); }
+.content h2 { font-size: var(--h2-size); }
+.content h3,
+.content h4 { font-size: var(--h3-size); }
+
+.content p,
+.content li {
+  max-width: 62ch;
+}
 
 .content strong { font-weight: 700; }
 
@@ -224,6 +269,7 @@ app-current-concert + .site-main {
 .content li {
   position: relative;
   padding-left: 0.75em;
+  line-height: 1.32;
 }
 
 .content li::before {
@@ -279,19 +325,28 @@ app-current-concert + .site-main {
 }
 
 @media (max-width: 64rem) {
-  .site-main {
-    padding-right: var(--pad);
-  }
-
   .event {
     max-width: 100%;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .event-next {
+    border-left: 0;
+    border-top: 1px solid var(--line-soft);
+    padding-left: 0;
+    padding-top: 0.85rem;
   }
 }
 
 @media (max-width: 47.99rem) {
   :root {
     --wrap: calc(100vw - 1.25rem);
-    --prose-size: clamp(1.45rem, 7vw, 2rem);
+    --prose-size: clamp(1.2rem, 5.2vw, 1.5rem);
+    --lead-size: clamp(1.5rem, 7.8vw, 2.05rem);
   }
 
   .brand-logo {
@@ -311,6 +366,11 @@ app-current-concert + .site-main {
   .event {
     margin: 0.9rem 0;
     padding: 0.9rem;
+  }
+
+  .content p,
+  .content li {
+    max-width: 100%;
   }
 }
 

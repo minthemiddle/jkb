@@ -13,12 +13,14 @@ class AppNavbar extends HTMLElement {
       <header class="site-header">
         <div class="header-inner">
           <a href="index.html" class="brand" aria-label="Junger Kammerchor Berlin Startseite">
-            <img src="images/logo.svg" alt="Junger Kammerchor Berlin Logo" class="brand-logo" />
+            <img src="images/logo.svg" alt="Junger Kammerchor Berlin Logo" class="brand-logo" width="219" height="90" decoding="async" />
           </a>
 
           <nav class="nav" aria-label="Hauptnavigation">
-            ${link('konzerte.html', 'Konzerte')}
+          ${link('konzerte.html', 'Konzerte')}
             <span class="sep" aria-hidden="true">|</span>
+            ${link('leitung.html', 'Leitung')}
+            <span class="sep" aria-hidden="true">|</span>  
             ${link('mitsingen.html', 'Mitsingen')}
             <span class="sep" aria-hidden="true">|</span>
             ${link('chorleben.html', 'Chorleben')}

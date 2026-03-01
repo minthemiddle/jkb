@@ -3,7 +3,6 @@ class AppFooter extends HTMLElement {
     this.innerHTML = `
       <footer class="site-footer">
         <div class="footer-inner">
-          <app-current-concert variant="footer"></app-current-concert>
           <nav class="footer-nav" aria-label="Weitere Seiten">
             <a href="index.html">Startseite</a>
             <span class="sep" aria-hidden="true">|</span>
