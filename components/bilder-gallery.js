@@ -28,7 +28,7 @@ class AppBilderGallery extends HTMLElement {
     const normalizeCaption = (raw, fallback) => {
       const txt = (raw || "").replace(/\s+/g, " ").trim();
       if (!txt) return fallback;
-      return txt.length > 120 ? `${txt.slice(0, 117)}...` : txt;
+      return txt;
     };
 
     const formatDate = (iso) => {
@@ -47,7 +47,6 @@ class AppBilderGallery extends HTMLElement {
     items.forEach((item, idx) => {
       const fallback = `${item.shortCode || "Beitrag"} · Bild ${item.index || idx + 1}`;
       const caption = normalizeCaption(item.caption, fallback);
-      const dateLabel = formatDate(item.timestamp);
       const alt = (item.alt || caption).replace(/\s+/g, " ").trim();
 
       const figure = document.createElement("figure");
