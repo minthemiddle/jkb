@@ -230,12 +230,6 @@ app-current-concert + .site-main {
   margin-top: 0.9em;
 }
 
-.content > p:first-of-type:not(.section-links) {
-  font-size: var(--lead-size);
-  line-height: 1.22;
-  letter-spacing: -0.012em;
-}
-
 .content h1,
 .content h2,
 .content h3,
