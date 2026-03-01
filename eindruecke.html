@@ -20,7 +20,10 @@
     <meta name="twitter:image" content="https://jungerkammerchorberlin.de/images/bilder/001_DN770P4jX8S_01.jpg" />
     <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
     <title>Eindrücke | Junger Kammerchor Berlin</title>
-    <link rel="stylesheet" href="styles/global.css" />
+
+    <link rel="preload" href="styles/global.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/global.css"></noscript>
+
     <script src="components/navbar.js" defer></script>
     <script src="components/current-concert.js" defer></script>
     <script src="components/news-banner.js" defer></script>

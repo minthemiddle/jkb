@@ -121,6 +121,11 @@ app-current-concert {
   transition: max-height 260ms ease, opacity 180ms ease, transform 220ms ease;
 }
 
+/* Reserve space before the component upgrades to prevent first-paint shifts. */
+app-current-concert:empty {
+  min-height: clamp(22rem, 50vw, 30rem);
+}
+
 app-news-banner {
   padding-inline: var(--pad);
   overflow: hidden;
@@ -128,6 +133,11 @@ app-news-banner {
   opacity: 1;
   transform: translateY(0);
   transition: max-height 240ms ease, opacity 180ms ease, transform 220ms ease;
+}
+
+/* Reserve banner height before JS inserts content. */
+app-news-banner:empty {
+  min-height: clamp(3rem, 6vw, 4.2rem);
 }
 
 app-footer {
@@ -150,6 +160,7 @@ app-footer {
 
 .brand-logo {
   width: clamp(10rem, 22vw, 16rem);
+  aspect-ratio: 219 / 90;
   height: auto;
   filter: brightness(0) invert(1);
 }
