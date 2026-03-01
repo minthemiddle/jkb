@@ -6,6 +6,8 @@ class AppFooter extends HTMLElement {
           <nav class="footer-nav" aria-label="Weitere Seiten">
             <a href="index.html">Startseite</a>
             <span class="sep" aria-hidden="true">|</span>
+            <a href="eindruecke.html">Eindrücke</a>
+            <span class="sep" aria-hidden="true">|</span>
             <a href="leitung.html">Leitung</a>
             <span class="sep" aria-hidden="true">|</span>
             <a href="unterstuetzung.html">Unterstützen</a>

@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
+    <meta name="description"
+        content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://jungerkammerchorberlin.de/konzerte.html" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="Junger Kammerchor Berlin" />
     <meta property="og:title" content="Konzerte | Junger Kammerchor Berlin" />
-    <meta property="og:description" content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
+    <meta property="og:description"
+        content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
     <meta property="og:url" content="https://jungerkammerchorberlin.de/konzerte.html" />
     <meta property="og:image" content="https://jungerkammerchorberlin.de/images/2026-treffpunkt-weltzeituhr.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Konzerte | Junger Kammerchor Berlin" />
-    <meta name="twitter:description" content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
+    <meta name="twitter:description"
+        content="Aktuelle und vergangene Konzerte des Jungen Kammerchors Berlin inklusive Plakatarchiv." />
     <meta name="twitter:image" content="https://jungerkammerchorberlin.de/images/2026-treffpunkt-weltzeituhr.webp" />
     <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
     <title>Konzerte | Junger Kammerchor Berlin</title>
     <link rel="stylesheet" href="styles/global.css" />
     <script src="components/navbar.js" defer></script>
     <script src="components/current-concert.js" defer></script>
+    <script src="components/pill-label.js" defer></script>
     <script src="components/poster-dialog.js" defer></script>
     <script src="components/footer.js" defer></script>
 </head>
@@ -34,8 +38,9 @@
     <main class="site-main">
         <article class="content">
             <h1>Konzerte</h1>
-            <p>Der Chor präsentiert seine Arbeit regelmäßig in eigenen Konzerten und Gottesdiensten. Neben zwei großen
-                Konzerten am Ende jeder halbjährigen Probenphase veranstaltet der Chor regelmäßig Matinéen und tritt im
+            <p>Der Chor präsentiert seine Arbeit regelmäßig in eigenen Konzerten und Gottesdiensten. Neben zwei eigenen,
+                großen
+                Konzerten am Ende jeder halbjährigen Probenphase tritt der Chor im
                 Rahmen unterschiedlicher anderer Veranstaltungen auf.</p>
             <br>
 
@@ -46,15 +51,22 @@
                     <dd>
                         <p class="concert-title">Adventskonzert: Bach: Magnificat</p>
                         <p class="concert-place">Berlin (Ort folgt)</p>
-                        <p class="concert-meta">mit <a href="https://www.jpon.de/" target="_blank"
-                                rel="noopener noreferrer">JPON</a></p>
+                        <p class="concert-meta">Mit dem Jungen Philharmonischen Orchester Niedersachsen (<a
+                                href="https://www.jpon.de/" target="_blank" rel="noopener noreferrer">JPON</a>)</p>
+                        <p class="concert-meta"><a href="https://ti.to/jungerkammerchorberlin/magnificat"
+                                target="_blank" rel="noopener noreferrer">Vormerken</a></p>
                     </dd>
                 </div>
                 <div class="concert-row">
-                    <dt>10.05.2026 · 15:30</dt>
+                    <dt>10.05.2026 · 15:30 <app-pill-label text="NÄCHSTES"></app-pill-label></dt>
                     <dd>
                         <p class="concert-title">Treffpunkt Weltzeituhr</p>
                         <p class="concert-place">Kammermusiksaal Philharmonie Berlin</p>
+                        <p class="concert-meta">Herbert-von-Karajan-Straße 1, 10785 Berlin</p>
+                        <p class="concert-meta">Mit tonraumfünf10 und be:one vocalists</p>
+                        <p class="concert-meta"><a
+                                href="https://chorverband-berlin.reservix.de/tickets-sonntagskonzertreihe-nr-5-treffpunkt-weltzeituhr-in-berlin-philharmonie-kammermusiksaal-am-10-5-2026/e2469775"
+                                target="_blank" rel="noopener noreferrer">Tickets</a></p>
                     </dd>
                 </div>
                 <div class="concert-row">
@@ -71,14 +83,14 @@
                     <dd>
                         <p class="concert-title">Hoffnung tragen</p>
                         <p class="concert-place">Übergangswohnheim Marienfelder Allee und Gedenkkirche Maria Regina
-                            Martyrum, Berlin</p>
+                            Martyrum, Berlin-Reinickendorf</p>
                     </dd>
                 </div>
                 <div class="concert-row">
                     <dt>24.11.2024</dt>
                     <dd>
                         <p class="concert-title">Johannes Brahms: Ein deutsches Requiem, op. 45</p>
-                        <p class="concert-place">Evangelische Auenkirche, Wilhelmsaue 118a, 10715 Berlin</p>
+                        <p class="concert-place">Evangelische Auenkirche, Berlin-Wilmersdorf</p>
                         <p class="concert-meta">Junges Philharmonisches Orchester Niedersachsen · Soli: Marie-Pierre Roy
                             (Sopran), Bruno Meichsner (Bariton)</p>
                     </dd>
@@ -112,7 +124,7 @@
                     <dt>19.06.2022</dt>
                     <dd>
                         <p class="concert-title">Starke Frauen – Sentimentale Männer?</p>
-                        <p class="concert-place">Kammermusiksaal Philharmonie Berlin</p>
+                        <p class="concert-place">Kammermusiksaal Philharmonie Berlin, Berlin-Mitte</p>
                         <p class="concert-meta">mit Neuer Männerchor Berlin und Collegium Musicum Berlin</p>
                     </dd>
                 </div>
@@ -128,7 +140,7 @@
                     <dt>18.09.2021</dt>
                     <dd>
                         <p class="concert-title">Nähe und Distanz</p>
-                        <p class="concert-place">Kirche auf dem Tempelhofer Feld
+                        <p class="concert-place">Kirche auf dem Tempelhofer Feld, Berlin-Tempelhof
                         </p>
                     </dd>
                 </div>
@@ -136,7 +148,7 @@
                     <dt>23.11.2019</dt>
                     <dd>
                         <p class="concert-title">Maurice Duruflé: Requiem</p>
-                        <p class="concert-place">Heilige-Geist-Kirche, Perleberger Straße</p>
+                        <p class="concert-place">Heilige-Geist-Kirche, Berlin-Moabit</p>
                         <p class="concert-meta">Fassung für Chor, Orgel und Kammerorchester</p>
                     </dd>
                 </div>
@@ -144,14 +156,14 @@
                     <dt>06.07.2019</dt>
                     <dd>
                         <p class="concert-title">Von Mythen und Märchen</p>
-                        <p class="concert-place">Flutgraben e.V., Flutgraben 3, 12435 Berlin</p>
+                        <p class="concert-place">Flutgraben, Berlin-Treptow</p>
                     </dd>
                 </div>
                 <div class="concert-row">
                     <dt>22.03.2019</dt>
                     <dd>
                         <p class="concert-title">Best-of-Konzert: 5 Jahre Junger Kammerchor Berlin e.V.</p>
-                        <p class="concert-place">STONE BREWING, Im Marienpark 23, 12107 Berlin</p>
+                        <p class="concert-place">STONE BREWING, Berlin-Mariendorf</p>
                     </dd>
                 </div>
                 <div class="concert-row">
@@ -168,7 +180,7 @@
                     <dt>08.07.2018</dt>
                     <dd>
                         <p class="concert-title">Ständchen</p>
-                        <p class="concert-place">St.-Lukas-Kirche Kreuzberg, Bernburger Str. 3-5, 10963 Berlin</p>
+                        <p class="concert-place">St.-Lukas-Kirche, Berlin-Kreuzberg</p>
                         <p class="concert-meta">Soli: Alice Lackner (Mezzosopran), Imke Lichtwark (Klavier), Mirna
                             Milkovs (Klavier)</p>
                     </dd>
@@ -185,14 +197,14 @@
                     <dt>09.07.2017</dt>
                     <dd>
                         <p class="concert-title">Lieder im Freien zu singen</p>
-                        <p class="concert-place">St. Johannis Moabit</p>
+                        <p class="concert-place">St. Johannis, Berlin-Moabit</p>
                     </dd>
                 </div>
                 <div class="concert-row">
                     <dt>04.12.2016</dt>
                     <dd>
                         <p class="concert-title">Machet die Tore weit</p>
-                        <p class="concert-place">Taborkirche Kreuzberg, Taborstraße 17, 10997 Berlin</p>
+                        <p class="concert-place">Taborkirche, Berlin-Kreuzberg</p>
                         <p class="concert-meta">Soli: Anna Johanna Katharina Hofman (Sopran), Anna-Luise Oppelt (Alt)
                         </p>
                     </dd>
@@ -201,14 +213,14 @@
                     <dt>02.07.2016</dt>
                     <dd>
                         <p class="concert-title">Wein und Wasser</p>
-                        <p class="concert-place">Thomaskirche Kreuzberg, Bethaniendamm 23-27, Berlin</p>
+                        <p class="concert-place">Thomaskirche, Berlin-Kreuzberg</p>
                     </dd>
                 </div>
                 <div class="concert-row">
                     <dt>23.01.2016</dt>
                     <dd>
                         <p class="concert-title">Fauré Requiem</p>
-                        <p class="concert-place">Magdalenenkirche Neukölln, Karl-Marx-Straße 201-203, 12055 Berlin</p>
+                        <p class="concert-place">Magdalenenkirche, Berlin-Neukölln</p>
                         <p class="concert-meta">Soli: Johanna Knauth (Sopran), Jonas Böhm (Bass)</p>
                     </dd>
                 </div>
@@ -217,7 +229,7 @@
                     <dd>
                         <p class="concert-title">Verstohlen geht der Mond auf – A-cappella-Musik vom Dunkeln ins Licht
                         </p>
-                        <p class="concert-place">Apostel-Paulus-Kirche, Grunewaldstraße/Ecke Akazienstraße, 10823 Berlin
+                        <p class="concert-place">Apostel-Paulus-Kirche, Berlin-Schöneberg
                         </p>
                     </dd>
                 </div>
@@ -225,7 +237,7 @@
                     <dt>19.04.2015</dt>
                     <dd>
                         <p class="concert-title">Matinée-Konzert</p>
-                        <p class="concert-place">Herz-Jesu-Kirche Charlottenburg, Alt-Lietzow 23, Berlin</p>
+                        <p class="concert-place">Herz-Jesu-Kirche Charlottenburg, Berlin</p>
                         <p class="concert-meta">Konrad Körnig (Orgel)</p>
                     </dd>
                 </div>
@@ -233,7 +245,7 @@
                     <dt>20.12.2014</dt>
                     <dd>
                         <p class="concert-title">Saint-Saëns: Oratorio de Noël</p>
-                        <p class="concert-place">Paul-Gerhardt-Kirche, Hauptstraße 47-48, 10827 Berlin-Schöneberg</p>
+                        <p class="concert-place">Paul-Gerhardt-Kirche, Berlin-Schöneberg</p>
                         <p class="concert-meta">Schöneberger Kammerorchester · Soli: Johanna Knauth, Anna-Luise Oppelt,
                             Massi Tüji, Jonas Böhm</p>
                     </dd>
@@ -242,7 +254,7 @@
                     <dt>30.04.2014</dt>
                     <dd>
                         <p class="concert-title">Frühlingskonzert</p>
-                        <p class="concert-place">Herz-Jesu-Kirche, Alt-Lietzow 23, Berlin</p>
+                        <p class="concert-place">Herz-Jesu-Kirche, Berlin-Moabit</p>
                     </dd>
                 </div>
             </dl>
