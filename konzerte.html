@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/global.css" />
     <script src="components/navbar.js" defer></script>
     <script src="components/current-concert.js" defer></script>
+    <script src="components/poster-dialog.js" defer></script>
     <script src="components/footer.js" defer></script>
 </head>
 
@@ -23,77 +24,314 @@
             <p>Der Chor präsentiert seine Arbeit regelmäßig in eigenen Konzerten und Gottesdiensten. Neben zwei großen
                 Konzerten am Ende jeder halbjährigen Probenphase veranstaltet der Chor regelmäßig Matinéen und tritt im
                 Rahmen unterschiedlicher anderer Veranstaltungen auf.</p>
-            <h2>Ausgewählte vergangene Konzerte</h2>
-            <p><strong>Boulanger im Konzerthaus</strong></p>
-            <p><img loading="lazy" decoding="async" src="images/2024-boulanger-konzerthaus.png" alt="Image 2">
-                „<strong>Hoffnung tragen</strong>„</p>
-            <p><img loading="lazy" decoding="async" src="images/2024-hoffnung-tragen.jpeg" alt="Image 3">
-                <strong>Brahms-Requiem</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2024-brahms-requiem.png" alt="Image 4">
-                <strong>VIERseiti</strong>g
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2024-vierseitig.jpg" alt="Image 5">
-                <strong>Reiselust: Chorreise von Berlin nach Warschau und Krakau</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2023-reiselust.jpg" alt="Image 6">
-                <strong>Jubiläumskonzert – 10 Jahre <strong>Junger Kammerchor Berlin</strong></strong>
-            </p>
-            <p><strong>„Unser Leben ist ein Schatten“ – Motetten aus der Familie Bach</strong></p>
-            <p><img loading="lazy" decoding="async" src="images/2022-unser-leben-ist-ein-schatten.png" alt="Image 7">
-                <strong>Starke Frauen – Sentimentale Männer?</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2022-starke-frauen.png" alt="Image 8">
-                <strong>Bridge of Songs</strong>
-            </p>
-            <p>Im Rahmen des <em>Choralspace Winter Festival</em></p>
-            <p><img loading="lazy" decoding="async" src="images/2021-bridge-of-songs.png" alt="Image 9">
-                <strong>Nähe und Distanz</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2021-naehe-und-distanz.png" alt="Image 10">
-                <strong>Maurice Duruflé: Requiem</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2020-durufle-requiem.png" alt="Image 11">
-                <strong>Von Mythen und Märchen</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2019-mythen-und-maerchen.png" alt="Image 12">
-                <strong>Frühjahr 2019: 5 Jahre Junger Kammerchor</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2019-5-jahre-jkb.jpg" alt="Image 13">
-                <strong>Weihnachten 2018: Bach, Weihnachtsoratorium 1-3</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2018-weihnachtsoratorium.jpg" alt="Image 14">
-                <strong>Sommer2018 2018: Ständchen</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2018-staendchen.jpg" alt="Image 15">
-                <strong>Winter 2018: BACH</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2018-bach.jpg" alt="Image 16">
-                <strong>Sommer 2017: Lieder im Freien zu singen</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2017-lieder-im-freien.jpg" alt="Image 17">
-                <strong>Advent 2016: Machet die Tore weit</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2016-machet-die-tore-weit.jpg" alt="Image 18">
-                <strong>Sommer 2016: Wein und Wasser</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2016-wein-und-wasser.jpg" alt="Image 19">
-                <strong>Winter 2016: Requiem</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2016-requiem.jpg" alt="Image 20">
-                <strong>Sommer 2015: Verstohlen geht der Mond auf</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2015-verstohlen-geht-der-mond-auf.jpg" alt="Image 21">
-                <strong>Frühling 2015: Matinée-Konzert</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2015-matinee.jpg" alt="Image 22">
-                <strong>Winter 2015: Oratorio de Noël</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2015-oratorio-de-noel.jpg" alt="Image 23">
-                <strong>Frühling 2014: Frühlingskonzert</strong>
-            </p>
-            <p><img loading="lazy" decoding="async" src="images/2014-fruehlingskonzert.jpg" alt="Image 24"></p>
 
+            <h2>Konzerte</h2>
+
+            <dl class="concert-table">
+                <div class="concert-row">
+                    <dt>05.12.2026</dt>
+                    <dd>
+                        <p class="concert-title">Adventskonzert: Bach: Magnificat</p>
+                        <p class="concert-place">Berlin (Ort folgt)</p>
+                        <p class="concert-meta">mit <a href="https://www.jpon.de/" target="_blank"
+                                rel="noopener noreferrer">JPON</a></p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>10.05.2026 · 15:30</dt>
+                    <dd>
+                        <p class="concert-title">Treffpunkt Weltzeituhr</p>
+                        <p class="concert-place">Kammermusiksaal Philharmonie Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>23.11.2025</dt>
+                    <dd>
+                        <p class="concert-title">Chorwerke von Lili Boulanger</p>
+                        <p class="concert-place">Großer Saal des Konzerthauses Berlin</p>
+                        <p class="concert-meta">Amateurchorfest mit Kammerchor des Collegium Musicum, Junges Consortium
+                            Berlin, ensemble berlino vocale berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>10.+11.05.2025</dt>
+                    <dd>
+                        <p class="concert-title">Hoffnung tragen</p>
+                        <p class="concert-place">Übergangswohnheim Marienfelder Allee und Gedenkkirche Maria Regina
+                            Martyrum, Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>24.11.2024</dt>
+                    <dd>
+                        <p class="concert-title">Johannes Brahms: Ein deutsches Requiem, op. 45</p>
+                        <p class="concert-place">Evangelische Auenkirche, Wilhelmsaue 118a, 10715 Berlin</p>
+                        <p class="concert-meta">Junges Philharmonisches Orchester Niedersachsen · Soli: Marie-Pierre Roy
+                            (Sopran), Bruno Meichsner (Bariton)</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>10.03.2024</dt>
+                    <dd>
+                        <p class="concert-title">VIERSEITIG</p>
+                        <p class="concert-place">Kammermusiksaal Philharmonie Berlin</p>
+                        <p class="concert-meta">consortium vocale berlin, Kammerchor Vocantare Berlin, Kammerchor
+                            JEUNESSE Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>30.09.-01.10.2023</dt>
+                    <dd>
+                        <p class="concert-title">Reiselust: Chorreise von Berlin nach Warschau und Krakau</p>
+                        <p class="concert-place">Kościół Akademicki św. Anny (Warschau) und Kościół Bonifratrów Trójcy
+                            Przenajświętszej (Krakau)</p>
+                        <p class="concert-meta">mit Chor Dunque ed Altro und Chor Ars Choralis</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>19.+20.11.2022</dt>
+                    <dd>
+                        <p class="concert-title">Unser Leben ist ein Schatten – Motetten aus der Familie Bach</p>
+                        <p class="concert-place">St. Annen-Kirche, Panketal und Auenkirche am Volkspark Wilmersdorf</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>19.06.2022</dt>
+                    <dd>
+                        <p class="concert-title">Starke Frauen – Sentimentale Männer?</p>
+                        <p class="concert-place">Kammermusiksaal Philharmonie Berlin</p>
+                        <p class="concert-meta">mit Neuer Männerchor Berlin und Collegium Musicum Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>11.12.2021</dt>
+                    <dd>
+                        <p class="concert-title">Bridge of Songs</p>
+                        <p class="concert-place">Berlin</p>
+                        <p class="concert-meta">CHORALSPACE Winter Festival</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>18.09.2021</dt>
+                    <dd>
+                        <p class="concert-title">Nähe und Distanz</p>
+                        <p class="concert-place">Kirche auf dem Tempelhofer Feld
+                        </p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>23.11.2019</dt>
+                    <dd>
+                        <p class="concert-title">Maurice Duruflé: Requiem</p>
+                        <p class="concert-place">Heilige-Geist-Kirche, Perleberger Straße</p>
+                        <p class="concert-meta">Fassung für Chor, Orgel und Kammerorchester</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>06.07.2019</dt>
+                    <dd>
+                        <p class="concert-title">Von Mythen und Märchen</p>
+                        <p class="concert-place">Flutgraben e.V., Flutgraben 3, 12435 Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>22.03.2019</dt>
+                    <dd>
+                        <p class="concert-title">Best-of-Konzert: 5 Jahre Junger Kammerchor Berlin e.V.</p>
+                        <p class="concert-place">STONE BREWING, Im Marienpark 23, 12107 Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>15.+16.12.2018</dt>
+                    <dd>
+                        <p class="concert-title">J. S. Bach: Weihnachtsoratorium, Kantaten 1-3</p>
+                        <p class="concert-place">Mensa Schulzentrum Zepernick (Panketal) und Heilige-Geist-Kirche
+                            (Berlin-Moabit)</p>
+                        <p class="concert-meta">Collegium Musicum Panketal · Soli: Alice Lackner (Mezzosopran), Laurin
+                            Oppermann (Tenor), Tobias Müller-Kopp (Bass)</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>08.07.2018</dt>
+                    <dd>
+                        <p class="concert-title">Ständchen</p>
+                        <p class="concert-place">St.-Lukas-Kirche Kreuzberg, Bernburger Str. 3-5, 10963 Berlin</p>
+                        <p class="concert-meta">Soli: Alice Lackner (Mezzosopran), Imke Lichtwark (Klavier), Mirna
+                            Milkovs (Klavier)</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>28.01.2018</dt>
+                    <dd>
+                        <p class="concert-title">BACH</p>
+                        <p class="concert-place">Berlin</p>
+                        <p class="concert-meta">mit Schöneberger Kammerorchester</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>09.07.2017</dt>
+                    <dd>
+                        <p class="concert-title">Lieder im Freien zu singen</p>
+                        <p class="concert-place">St. Johannis Moabit</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>04.12.2016</dt>
+                    <dd>
+                        <p class="concert-title">Machet die Tore weit</p>
+                        <p class="concert-place">Taborkirche Kreuzberg, Taborstraße 17, 10997 Berlin</p>
+                        <p class="concert-meta">Soli: Anna Johanna Katharina Hofman (Sopran), Anna-Luise Oppelt (Alt)
+                        </p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>02.07.2016</dt>
+                    <dd>
+                        <p class="concert-title">Wein und Wasser</p>
+                        <p class="concert-place">Thomaskirche Kreuzberg, Bethaniendamm 23-27, Berlin</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>23.01.2016</dt>
+                    <dd>
+                        <p class="concert-title">Fauré Requiem</p>
+                        <p class="concert-place">Magdalenenkirche Neukölln, Karl-Marx-Straße 201-203, 12055 Berlin</p>
+                        <p class="concert-meta">Soli: Johanna Knauth (Sopran), Jonas Böhm (Bass)</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>03.07.2015</dt>
+                    <dd>
+                        <p class="concert-title">Verstohlen geht der Mond auf – A-cappella-Musik vom Dunkeln ins Licht
+                        </p>
+                        <p class="concert-place">Apostel-Paulus-Kirche, Grunewaldstraße/Ecke Akazienstraße, 10823 Berlin
+                        </p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>19.04.2015</dt>
+                    <dd>
+                        <p class="concert-title">Matinée-Konzert</p>
+                        <p class="concert-place">Herz-Jesu-Kirche Charlottenburg, Alt-Lietzow 23, Berlin</p>
+                        <p class="concert-meta">Konrad Körnig (Orgel)</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>20.12.2014</dt>
+                    <dd>
+                        <p class="concert-title">Saint-Saëns: Oratorio de Noël</p>
+                        <p class="concert-place">Paul-Gerhardt-Kirche, Hauptstraße 47-48, 10827 Berlin-Schöneberg</p>
+                        <p class="concert-meta">Schöneberger Kammerorchester · Soli: Johanna Knauth, Anna-Luise Oppelt,
+                            Massi Tüji, Jonas Böhm</p>
+                    </dd>
+                </div>
+                <div class="concert-row">
+                    <dt>30.04.2014</dt>
+                    <dd>
+                        <p class="concert-title">Frühlingskonzert</p>
+                        <p class="concert-place">Herz-Jesu-Kirche, Alt-Lietzow 23, Berlin</p>
+                    </dd>
+                </div>
+            </dl>
+
+
+            <h2>Plakatarchiv</h2>
+            <div class="poster-grid">
+                <figure><img loading="lazy" decoding="async" src="images/2026-treffpunkt-weltzeituhr.webp"
+                        alt="Plakat Treffpunkt Weltzeituhr 2026">
+                    <figcaption>2026 · Treffpunkt Weltzeituhr</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2024-hoffnung-tragen.jpeg"
+                        alt="Plakat Hoffnung tragen">
+                    <figcaption>2025 · Hoffnung tragen</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2024-brahms-requiem.png"
+                        alt="Plakat Brahms-Requiem">
+                    <figcaption>2024 · Brahms-Requiem</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2024-boulanger-konzerthaus.png"
+                        alt="Plakat Chorwerke von Lili Boulanger">
+                    <figcaption>2025 · Chorwerke von Lili Boulanger</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2024-vierseitig.jpg" alt="Plakat VIERSEITIG">
+                    <figcaption>2024 · VIERSEITIG</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2023-reiselust.jpg" alt="Plakat Reiselust">
+                    <figcaption>2023 · Reiselust</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2022-unser-leben-ist-ein-schatten.png"
+                        alt="Plakat Unser Leben ist ein Schatten">
+                    <figcaption>2022 · Unser Leben ist ein Schatten</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2022-starke-frauen.png"
+                        alt="Plakat Starke Frauen – Sentimentale Männer">
+                    <figcaption>2022 · Starke Frauen – Sentimentale Männer?</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2022-philharmonie.jpeg"
+                        alt="Konzertfoto Philharmonie 2022">
+                    <figcaption>2022 · Konzertfoto Philharmonie</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2021-bridge-of-songs.png"
+                        alt="Plakat Bridge of Songs">
+                    <figcaption>2021 · Bridge of Songs</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2021-naehe-und-distanz.png"
+                        alt="Plakat Nähe und Distanz">
+                    <figcaption>2021 · Nähe und Distanz</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2020-durufle-requiem.png"
+                        alt="Plakat Duruflé Requiem">
+                    <figcaption>2020 · Duruflé Requiem</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2019-mythen-und-maerchen.png"
+                        alt="Plakat Von Mythen und Märchen">
+                    <figcaption>2019 · Von Mythen und Märchen</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2019-5-jahre-jkb.jpg"
+                        alt="Plakat 5 Jahre Junger Kammerchor Berlin">
+                    <figcaption>2019 · 5 Jahre Junger Kammerchor Berlin</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2018-weihnachtsoratorium.jpg"
+                        alt="Plakat Weihnachtsoratorium">
+                    <figcaption>2018 · Weihnachtsoratorium</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2018-staendchen.jpg" alt="Plakat Ständchen">
+                    <figcaption>2018 · Ständchen</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2018-bach.jpg" alt="Plakat Bach">
+                    <figcaption>2018 · BACH</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2017-lieder-im-freien.jpg"
+                        alt="Plakat Lieder im Freien zu singen">
+                    <figcaption>2017 · Lieder im Freien zu singen</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2016-machet-die-tore-weit.jpg"
+                        alt="Plakat Machet die Tore weit">
+                    <figcaption>2016 · Machet die Tore weit</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2016-wein-und-wasser.jpg"
+                        alt="Plakat Wein und Wasser">
+                    <figcaption>2016 · Wein und Wasser</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2016-requiem.jpg" alt="Plakat Requiem">
+                    <figcaption>2016 · Requiem</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2015-verstohlen-geht-der-mond-auf.jpg"
+                        alt="Plakat Verstohlen geht der Mond auf">
+                    <figcaption>2015 · Verstohlen geht der Mond auf</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2015-matinee.jpg" alt="Plakat Matinée-Konzert">
+                    <figcaption>2015 · Matinée-Konzert</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2015-oratorio-de-noel.jpg"
+                        alt="Plakat Oratorio de Noël">
+                    <figcaption>2014 · Oratorio de Noël</figcaption>
+                </figure>
+                <figure><img loading="lazy" decoding="async" src="images/2014-fruehlingskonzert.jpg"
+                        alt="Plakat Frühlingskonzert">
+                    <figcaption>2014 · Frühlingskonzert</figcaption>
+                </figure>
+            </div>
         </article>
     </main>
 

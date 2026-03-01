@@ -143,7 +143,7 @@ app-footer {
 
 .event {
   border: 3px solid var(--line);
-  max-width: var(--prose-width);
+  max-width: 100%;
   margin: var(--section-gap) 0;
   padding: clamp(1rem, 2.7vw, 1.7rem);
 }
@@ -318,11 +318,159 @@ app-current-concert + .site-main {
   font-weight: 700;
 }
 
-@media (max-width: 64rem) {
-  .event {
-    max-width: 100%;
-  }
+.concert-note {
+  font-size: clamp(0.96rem, 1.25vw, 1.08rem);
+  line-height: 1.35;
+  color: var(--text-soft);
+}
 
+.concert-table {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line-soft);
+}
+
+.concert-row {
+  display: grid;
+  grid-template-columns: minmax(9.2rem, 12.5rem) minmax(0, 1fr);
+  gap: clamp(0.7rem, 1.6vw, 1.1rem);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.concert-row dt,
+.concert-row dd {
+  margin: 0;
+}
+
+.concert-row dt {
+  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-soft);
+}
+
+.concert-title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.concert-place,
+.concert-meta {
+  margin: 0.1rem 0 0;
+  font-size: clamp(0.96rem, 1.28vw, 1.07rem);
+  line-height: 1.28;
+}
+
+.concert-meta {
+  color: var(--text-soft);
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.poster-grid figure {
+  margin: 0;
+  border: 1px solid var(--line-soft);
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.poster-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: grayscale(0.72) contrast(1.03) brightness(0.97);
+  transition: filter 180ms ease, transform 180ms ease;
+  cursor: pointer;
+}
+
+.poster-grid figure::after {
+  content: "";
+  position: absolute;
+  inset: 0.5rem;
+  background: color-mix(in srgb, var(--bg) 46%, transparent);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+.poster-grid img:hover,
+.poster-grid img:focus-visible {
+  filter: grayscale(0.58) contrast(1.06) brightness(0.99);
+  transform: scale(1.01);
+}
+
+.poster-grid img:focus-visible {
+  outline: 2px solid var(--line);
+  outline-offset: 2px;
+}
+
+.poster-grid figcaption {
+  margin-top: 0.45rem;
+  font-size: clamp(0.88rem, 1.1vw, 0.97rem);
+  line-height: 1.25;
+  color: var(--text-soft);
+  position: relative;
+  z-index: 1;
+}
+
+.poster-dialog {
+  border: 0;
+  padding: 0;
+  max-width: min(96vw, 1400px);
+  width: fit-content;
+  background: transparent;
+  color: #fff;
+}
+
+.poster-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.poster-dialog-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1;
+  padding: 0.45rem 0.55rem;
+  cursor: pointer;
+}
+
+.poster-dialog-figure {
+  margin: 0;
+}
+
+.poster-dialog-image {
+  display: block;
+  max-width: min(96vw, 1400px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+.poster-dialog-caption {
+  margin: 0;
+  padding: 0.55rem 0;
+  text-align: center;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 64rem) {
   .event-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -360,6 +508,11 @@ app-current-concert + .site-main {
   .event {
     margin: 0.9rem 0;
     padding: 0.9rem;
+  }
+
+  .concert-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .content p,
