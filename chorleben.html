@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+    <title>Chorleben</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <script src="components/navbar.js" defer></script>
+    <script src="components/current-concert.js" defer></script>
+    <script src="components/internal-dates.js" defer></script>
+    <script src="components/footer.js" defer></script>
+</head>
+<body class="site">
+    <app-navbar></app-navbar>
+
+    <main class="site-main">
+        <article class="content">
+            <h1>Chorleben &amp; Chorintern</h1>
+            <p class="section-links"><strong>Abschnitte:</strong> <a href="#chorleben-gemeinschaft">Gemeinschaft</a> | <a href="#chorleben-termine">Termine</a> | <a href="#chorleben-beitrag">Beitrag</a> | <a href="#chorleben-organisation">Organisation</a> | <a href="#chorleben-proben">Probenbesuch</a></p>
+
+            <h2 id="chorleben-gemeinschaft">Gemeinschaft</h2>
+            <p>Unser Chor ist mehr als nur Singen. Wir sind ein sozialer Verbund, zu dem alle beitragen können und sollen, die dabei sind:</p>
+            <ul>
+                <li>Wir gehen gerne vor und/oder nach der Probe gemeinsam etwas essen oder trinken.</li>
+                <li>Wir verteilen die Arbeit auf viele Schultern: neben einem Vorstand (Vorsitz, Schatzmeister:in, Kommunikation) unterstützen den Chor weitere Aktive, z.B. bei der Notenverwaltung, der Chorfahrt- und Konzertplanung und der Drittmittelakquise.</li>
+                <li>Auch wenn wir "Jung" im Namen tragen: Wir sind offen für Menschen jeglichen Alters.</li>
+            </ul>
+
+            <h2 id="chorleben-termine">Termine &amp; Kalender</h2>
+            <p><em>(Hier ist normalerweise ein Google Kalender eingebettet. <a href="https://calendar.google.com/calendar/embed?src=OTVwbW82bXRpZTdsbGhsaGIwNmplNGZpcjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Hier klicken, um den Kalender direkt zu öffnen</a>.)</em></p>
+            <app-internal-dates></app-internal-dates>
+
+            <h2 id="chorleben-beitrag">Beitrag &amp; Zahlung</h2>
+            <ul>
+                <li>Um die Unkosten (Raummiete, <a href="leitung.html">Chorleitung</a>, Stimmbildung) zu finanzieren, leisten alle Sängerinnen und Sänger einen monatlichen Beitrag.</li>
+                <li>Dieser beträgt aktuell 20EUR für Vollzahler und 14EUR für Ermäßigte.</li>
+                <li>Jedes Probenwochenende kostet etwa 100EUR inkl. An- und Abfahrt, Unterkunft, Verpflegung und individueller Stimmbildung.</li>
+                <li>Der Chor ist als gemeinnütziger Verein organisiert, alle Aktiven werden Mitglieder:innen im Verein.</li>
+                <li><strong>Bankverbindung:</strong> Junger Kammerchor Berlin - DE86 8306 5408 0004 0193 42 (Deutsche Skatbank)</li>
+                <li><strong>Verwendungszweck:</strong> <code>Chorbeitrag, Name, Vorname</code></li>
+                <li><strong>Dauerauftrag:</strong> Bitte für die Mitte des Monats einrichten.</li>
+            </ul>
+
+            <h2 id="chorleben-organisation">Organisation &amp; Beitritt</h2>
+            <p><strong>Junger Kammerchor Berlin e.V.</strong><br>
+            Kontakt: <a href="mailto:hallo@jungerkammerchorberlin.de">hallo@jungerkammerchorberlin.de</a></p>
+            <p>Wir sind seit Sommer 2017 ein eingetragener Verein. Alle Chormitglieder sind auch Vereinsmitglieder. Aus den Chorbeiträgen wird in erster Linie <a href="leitung.html">Julianes</a> Honorar sowie regelmäßige Einzelstimmbildung für alle Chormitglieder finanziert - darüber hinaus Honorare für Korrepetition und Solisten sowie laufende Kosten (z.B. Notenkopien).</p>
+            <p><strong>Anmeldung</strong><br>
+            Für die Anmeldung fülle bitte folgende Vorlagen (Beitritt und Datenschutzerklärung) als <strong>eine E-Mail</strong> aus und schicke sie an <a href="mailto:hallo@jungerkammerchorberlin.de">hallo@jungerkammerchorberlin.de</a> mit dem Betreff: <code>Beitritt VORNAME NACHNAME</code>.<br>
+            <em>(Info: Wir benötigen Alter und Arbeitsstatus für Förderanträge.)</em></p>
+
+            <blockquote>
+                <p><strong>Teil 1: Mitgliedsantrag</strong></p>
+                <p>Ich möchte hiermit den Antrag auf Mitgliedschaft im Verein Junger Kammerchor Berlin e.V. stellen.</p>
+                <ul>
+                    <li>Name:</li>
+                    <li>Geburtsdatum:</li>
+                    <li>E-Mail:</li>
+                    <li>Studium oder Berufstätig:</li>
+                </ul>
+                <p>VORNAME NACHNAME (keine digitale oder gescannte Unterschrift nötig)</p>
+            </blockquote>
+
+            <blockquote>
+                <p><strong>Teil 2: Datenschutzerklärung</strong></p>
+                <p>Persönliche Daten dürfen nur für Zwecke verwendet werden, die für die Verfolgung der Vereinsziele und der Betreuung und Verwaltung der Mitglieder notwendig sind.</p>
+                <p>Ich erkläre mich einverstanden, dass der Verein folgende Daten im Einklang mit dem Bundesdatenschutzgesetz von mir speichert und verarbeitet:</p>
+                <ul>
+                    <li>Name:</li>
+                    <li>Geburtsdatum:</li>
+                    <li>E-Mail-Adresse:</li>
+                </ul>
+                <p><em>Hinweis: Persönliche Daten werden nicht ohne Zustimmung an Dritte weitergegeben.</em></p>
+                <p>Hiermit bestätige ich, dass ich gerne beitreten möchte und der Datenschutzerklärung zustimme.</p>
+                <p>VORNAME NACHNAME (keine digitale oder gescannte Unterschrift nötig)</p>
+            </blockquote>
+
+            <h2 id="chorleben-proben">Probenbesuch &amp; Abmeldung</h2>
+            <p>Wir gehen grundsätzlich davon aus, dass alle vollständig an allen Proben, am Probenwochenende und allen Konzerten teilnehmen. <strong>Wer beim Konzert mitsingen will, muss auf jeden Fall beim Probenwochenende dabei sein.</strong></p>
+            <p><strong>Abmelden von Proben:</strong></p>
+            <ul>
+                <li>Nutzt für die Abmeldung bitte ausschließlich unsere E-Mail-Adresse: <a href="mailto:hallo@jungerkammerchorberlin.de">hallo@jungerkammerchorberlin.de</a>.</li>
+                <li>Die Abmeldung ist wichtig, um eine kontinuierliche und sinnvolle Probenarbeit zu gewährleisten.</li>
+                <li>Wer mehrfach unentschuldigt fehlt, wird verwarnt und dann von der aktiven Liste gestrichen.</li>
+                <li>Über persönliche Nachrichten (zusätzlich zur E-Mail) freut sich <a href="leitung.html">Juliane</a> weiterhin, wenn ihr den Chor verlasst oder absehbar länger pausiert.</li>
+            </ul>
+        </article>
+    </main>
+
+    <app-footer></app-footer>
+</body>
+</html>
