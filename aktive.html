@@ -1,146 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit."
+        />
+        <meta name="robots" content="index,follow" />
+        <link
+            rel="canonical"
+            href="https://jungerkammerchorberlin.de/aktive.html"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:site_name" content="Junger Kammerchor Berlin" />
+        <meta property="og:title" content="Aktive | Junger Kammerchor Berlin" />
+        <meta
+            property="og:description"
+            content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit."
+        />
+        <meta
+            property="og:url"
+            content="https://jungerkammerchorberlin.de/aktive.html"
+        />
+        <meta
+            property="og:image"
+            content="https://jungerkammerchorberlin.de/images/logo.svg"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:title"
+            content="Aktive | Junger Kammerchor Berlin"
+        />
+        <meta
+            name="twitter:description"
+            content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit."
+        />
+        <meta
+            name="twitter:image"
+            content="https://jungerkammerchorberlin.de/images/logo.svg"
+        />
+        <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+        <title>Aktive | Junger Kammerchor Berlin</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit." />
-    <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://jungerkammerchorberlin.de/aktive.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:site_name" content="Junger Kammerchor Berlin" />
-    <meta property="og:title" content="Aktive | Junger Kammerchor Berlin" />
-    <meta property="og:description"
-        content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit." />
-    <meta property="og:url" content="https://jungerkammerchorberlin.de/aktive.html" />
-    <meta property="og:image" content="https://jungerkammerchorberlin.de/images/logo.svg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Aktive | Junger Kammerchor Berlin" />
-    <meta name="twitter:description"
-        content="Aktive im Jungen Kammerchor Berlin: Aufgabenbereiche und Zuständigkeiten in der Vereinsarbeit." />
-    <meta name="twitter:image" content="https://jungerkammerchorberlin.de/images/logo.svg" />
-    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
-    <title>Aktive | Junger Kammerchor Berlin</title>
+        <link rel="preload" href="styles/global.css" as="style" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <noscript><link rel="stylesheet" href="styles/global.css" /></noscript>
 
-    <link rel="preload" href="styles/global.css" as="style">
-    <link rel="stylesheet" href="styles/global.css">
-    <noscript><link rel="stylesheet" href="styles/global.css"></noscript>
+        <script src="components/navbar.js" defer></script>
+        <script src="components/current-concert.js" defer></script>
+        <script src="components/news-banner.js" defer></script>
+        <script src="components/footer.js" defer></script>
+    </head>
 
-    <script src="components/navbar.js" defer></script>
-    <script src="components/current-concert.js" defer></script>
-    <script src="components/news-banner.js" defer></script>
-    <script src="components/footer.js" defer></script>
-</head>
+    <body class="site">
+        <app-navbar></app-navbar>
+        <app-current-concert></app-current-concert>
+        <app-news-banner></app-news-banner>
 
-<body class="site">
-    <app-navbar></app-navbar>
-    <app-current-concert></app-current-concert>
-    <app-news-banner></app-news-banner>
+        <main class="site-main">
+            <article class="content">
+                <h1>Aktive</h1>
+                <p>
+                    Viele Leute tragen zum Wirken und Gelingen des Jungen
+                    Kammerchor Berlins bei.
+                </p>
 
-    <main class="site-main">
-        <article class="content">
-            <h1>Aktive</h1>
-            <p>Viele Leute tragen zum Wirken und Gelingen des Jungen Kammerchor Berlins bei.</p>
+                <dl class="active-table">
+                    <div class="concert-row">
+                        <dt>Sophia, Heiko</dt>
+                        <dd>
+                            <p class="concert-title">Konzertplanung</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Caro, Kai</dt>
+                        <dd>
+                            <p class="concert-title">Chorfahrten</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Henrike, Nina</dt>
+                        <dd>
+                            <p class="concert-title">Social Media</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Alban</dt>
+                        <dd>
+                            <p class="concert-title">Notenverwaltung</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Feli, Hannah</dt>
+                        <dd>
+                            <p class="concert-title">
+                                "Was wurde geprobt?"-Liste
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Karo, Alban</dt>
+                        <dd>
+                            <p class="concert-title">Stimmproben</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Fredi</dt>
+                        <dd>
+                            <p class="concert-title">Anwesenheit</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Feli, Santin, Armin</dt>
+                        <dd>
+                            <p class="concert-title">Singen in Gesellschaft</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Konrad</dt>
+                        <dd>
+                            <p class="concert-title">Moderation</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Konrad, Heiko, Hannah</dt>
+                        <dd>
+                            <p class="concert-title">Reiseplanung (2025)</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Maren</dt>
+                        <dd>
+                            <p class="concert-title">Alumniarbeit</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Amelie, Jonas</dt>
+                        <dd>
+                            <p class="concert-title">Kassenprüfung</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Jonas, Martin</dt>
+                        <dd>
+                            <p class="concert-title">Webseite</p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Margarete</dt>
+                        <dd>
+                            <p class="concert-title">
+                                Kommunikation, Schlüssel, stellv. Vorstand
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Sven</dt>
+                        <dd>
+                            <p class="concert-title">
+                                Finanzen, Finanzvorstand
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="concert-row">
+                        <dt>Martin</dt>
+                        <dd>
+                            <p class="concert-title">
+                                Koordination, Offizielles, Vorstand
+                            </p>
+                        </dd>
+                    </div>
+                </dl>
+                <p class="">Letzte Aktualisierung: 01.03.2026</p>
+            </article>
+        </main>
 
-            <dl class="active-table">
-                <div class="concert-row">
-                    <dt>Sophia, Heiko</dt>
-                    <dd>
-                        <p class="concert-title">Konzertplanung</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Caro, Kai</dt>
-                    <dd>
-                        <p class="concert-title">Chorfahrten</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Henrike, Nina</dt>
-                    <dd>
-                        <p class="concert-title">Social Media</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Alban</dt>
-                    <dd>
-                        <p class="concert-title">Notenverwaltung</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Feli, Hannah</dt>
-                    <dd>
-                        <p class="concert-title">"Was wurde geprobt?"-Liste</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Karo, Alban</dt>
-                    <dd>
-                        <p class="concert-title">Stimmproben</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Fredi</dt>
-                    <dd>
-                        <p class="concert-title">Anwesenheit</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Feli, Santin, Armin</dt>
-                    <dd>
-                        <p class="concert-title">Singen in Gesellschaft</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Konrad</dt>
-                    <dd>
-                        <p class="concert-title">Moderation</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Konrad, Heiko, Hannah</dt>
-                    <dd>
-                        <p class="concert-title">Reiseplanung (2025)</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Amelie, Jonas</dt>
-                    <dd>
-                        <p class="concert-title">Kassenprüfung</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Jonas, Martin</dt>
-                    <dd>
-                        <p class="concert-title">Webseite</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Margarete</dt>
-                    <dd>
-                        <p class="concert-title">Kommunikation, Schlüssel, stellv. Vorstand</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Sven</dt>
-                    <dd>
-                        <p class="concert-title">Finanzen, Finanzvorstand</p>
-                    </dd>
-                </div>
-                <div class="concert-row">
-                    <dt>Martin</dt>
-                    <dd>
-                        <p class="concert-title">Koordination, Offizielles, Vorstand</p>
-                    </dd>
-                </div>
-            </dl>
-            <p class="">Letzte Aktualisierung: 01.03.2026</p>
-        </article>
-    </main>
-
-    <app-footer></app-footer>
-</body>
-
+        <app-footer></app-footer>
+    </body>
 </html>
