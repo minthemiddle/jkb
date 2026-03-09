@@ -34,6 +34,107 @@
     <script src="components/pill-label.js" defer></script>
     <script src="components/poster-dialog.js" defer></script>
     <script src="components/footer.js" defer></script>
+
+    <!-- Schema.org structured data for events -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MusicEvent",
+          "name": "Treffpunkt Weltzeituhr",
+          "startDate": "2026-05-10T15:30:00",
+          "location": {
+            "@type": "Place",
+            "name": "Kammermusiksaal Philharmonie Berlin",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Herbert-von-Karajan-Straße 1",
+              "addressLocality": "Berlin",
+              "postalCode": "10785",
+              "addressCountry": "DE"
+            }
+          },
+          "performer": {
+            "@type": "MusicGroup",
+            "name": "Junger Kammerchor Berlin"
+          },
+          "description": "Konzert mit tonraumfünf10 und be:one vocalists",
+          "image": "https://jungerkammerchorberlin.de/images/2026-treffpunkt-weltzeituhr.webp",
+          "url": "https://jungerkammerchorberlin.de/konzerte.html",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://chorverband-berlin.reservix.de/tickets-sonntagskonzertreihe-nr-5-treffpunkt-weltzeituhr-in-berlin-philharmonie-kammermusiksaal-am-10-5-2026/e2469775",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "MusicEvent",
+          "name": "Adventskonzert: Bach: Magnificat",
+          "startDate": "2026-12-05T19:00:00",
+          "location": {
+            "@type": "Place",
+            "name": "Berlin (Ort folgt)",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Berlin",
+              "addressCountry": "DE"
+            }
+          },
+          "performer": {
+            "@type": "MusicGroup",
+            "name": "Junger Kammerchor Berlin"
+          },
+          "description": "Mit dem Jungen Philharmonischen Orchester Niedersachsen (JPON)",
+          "image": "https://jungerkammerchorberlin.de/images/2019-5-jahre-jkb.jpg",
+          "url": "https://jungerkammerchorberlin.de/konzerte.html"
+        },
+        {
+          "@type": "MusicEvent",
+          "name": "Chorwerke von Lili Boulanger",
+          "startDate": "2025-11-23T19:00:00",
+          "location": {
+            "@type": "Place",
+            "name": "Großer Saal des Konzerthauses Berlin",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Gendarmenmarkt 2",
+              "addressLocality": "Berlin",
+              "postalCode": "10117",
+              "addressCountry": "DE"
+            }
+          },
+          "performer": {
+            "@type": "MusicGroup",
+            "name": "Junger Kammerchor Berlin"
+          },
+          "description": "Amateurchorfest mit Kammerchor des Collegium Musicum, Junges Consortium Berlin, ensemble berlino vocale berlin",
+          "image": "https://jungerkammerchorberlin.de/images/2024-boulanger-konzerthaus.png",
+          "url": "https://jungerkammerchorberlin.de/konzerte.html"
+        },
+        {
+          "@type": "MusicEvent",
+          "name": "Hoffnung tragen",
+          "startDate": "2025-05-10T17:00:00",
+          "location": {
+            "@type": "Place",
+            "name": "Übergangswohnheim Marienfelder Allee und Gedenkkirche Maria Regina Martyrum",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Berlin-Reinickendorf",
+              "addressCountry": "DE"
+            }
+          },
+          "performer": {
+            "@type": "MusicGroup",
+            "name": "Junger Kammerchor Berlin"
+          },
+          "image": "https://jungerkammerchorberlin.de/images/2024-hoffnung-tragen.jpeg",
+          "url": "https://jungerkammerchorberlin.de/konzerte.html"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="site">
@@ -269,93 +370,93 @@
             <h2>Plakatarchiv</h2>
             <div class="poster-grid">
                 <figure><img loading="lazy" decoding="async" src="images/2026-treffpunkt-weltzeituhr.webp"
-                        alt="Plakat Treffpunkt Weltzeituhr 2026">
+                        alt="Plakat Treffpunkt Weltzeituhr 2026" width="600" height="750">
                     <figcaption>2026 · Treffpunkt Weltzeituhr</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2024-hoffnung-tragen.jpeg"
-                        alt="Plakat Hoffnung tragen">
+                        alt="Plakat Hoffnung tragen 2025" width="600" height="750">
                     <figcaption>2025 · Hoffnung tragen</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2024-brahms-requiem.png"
-                        alt="Plakat Brahms-Requiem">
+                        alt="Plakat Brahms-Requiem 2024" width="600" height="750">
                     <figcaption>2024 · Brahms-Requiem</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2024-boulanger-konzerthaus.png"
-                        alt="Plakat Chorwerke von Lili Boulanger">
+                        alt="Plakat Chorwerke von Lili Boulanger 2025" width="600" height="750">
                     <figcaption>2025 · Chorwerke von Lili Boulanger</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2024-vierseitig.jpg" alt="Plakat VIERSEITIG">
+                <figure><img loading="lazy" decoding="async" src="images/2024-vierseitig.jpg" alt="Plakat VIERSEITIG 2024" width="600" height="750">
                     <figcaption>2024 · VIERSEITIG</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2023-reiselust.jpg" alt="Plakat Reiselust">
+                <figure><img loading="lazy" decoding="async" src="images/2023-reiselust.jpg" alt="Plakat Reiselust 2023" width="600" height="750">
                     <figcaption>2023 · Reiselust</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2022-unser-leben-ist-ein-schatten.png"
-                        alt="Plakat Unser Leben ist ein Schatten">
+                        alt="Plakat Unser Leben ist ein Schatten 2022" width="600" height="750">
                     <figcaption>2022 · Unser Leben ist ein Schatten</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2022-starke-frauen.png"
-                        alt="Plakat Starke Frauen – Sentimentale Männer">
+                        alt="Plakat Starke Frauen – Sentimentale Männer 2022" width="600" height="750">
                     <figcaption>2022 · Starke Frauen – Sentimentale Männer?</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2021-bridge-of-songs.png"
-                        alt="Plakat Bridge of Songs">
+                        alt="Plakat Bridge of Songs 2021" width="600" height="750">
                     <figcaption>2021 · Bridge of Songs</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2021-naehe-und-distanz.png"
-                        alt="Plakat Nähe und Distanz">
+                        alt="Plakat Nähe und Distanz 2021" width="600" height="750">
                     <figcaption>2021 · Nähe und Distanz</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2020-durufle-requiem.png"
-                        alt="Plakat Duruflé Requiem">
+                        alt="Plakat Duruflé Requiem 2020" width="600" height="750">
                     <figcaption>2020 · Duruflé Requiem</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2019-mythen-und-maerchen.png"
-                        alt="Plakat Von Mythen und Märchen">
+                        alt="Plakat Von Mythen und Märchen 2019" width="600" height="750">
                     <figcaption>2019 · Von Mythen und Märchen</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2019-5-jahre-jkb.jpg"
-                        alt="Plakat 5 Jahre Junger Kammerchor Berlin">
+                        alt="Plakat 5 Jahre Junger Kammerchor Berlin 2019" width="600" height="750">
                     <figcaption>2019 · 5 Jahre Junger Kammerchor Berlin</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2018-weihnachtsoratorium.jpg"
-                        alt="Plakat Weihnachtsoratorium">
+                        alt="Plakat Weihnachtsoratorium 2018" width="600" height="750">
                     <figcaption>2018 · Weihnachtsoratorium</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2018-staendchen.jpg" alt="Plakat Ständchen">
+                <figure><img loading="lazy" decoding="async" src="images/2018-staendchen.jpg" alt="Plakat Ständchen 2018" width="600" height="750">
                     <figcaption>2018 · Ständchen</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2018-bach.jpg" alt="Plakat Bach">
+                <figure><img loading="lazy" decoding="async" src="images/2018-bach.jpg" alt="Plakat BACH 2018" width="600" height="750">
                     <figcaption>2018 · BACH</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2017-lieder-im-freien.jpg"
-                        alt="Plakat Lieder im Freien zu singen">
+                        alt="Plakat Lieder im Freien zu singen 2017" width="600" height="750">
                     <figcaption>2017 · Lieder im Freien zu singen</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2016-machet-die-tore-weit.jpg"
-                        alt="Plakat Machet die Tore weit">
+                        alt="Plakat Machet die Tore weit 2016" width="600" height="750">
                     <figcaption>2016 · Machet die Tore weit</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2016-wein-und-wasser.jpg"
-                        alt="Plakat Wein und Wasser">
+                        alt="Plakat Wein und Wasser 2016" width="600" height="750">
                     <figcaption>2016 · Wein und Wasser</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2016-requiem.jpg" alt="Plakat Requiem">
+                <figure><img loading="lazy" decoding="async" src="images/2016-requiem.jpg" alt="Plakat Requiem 2016" width="600" height="750">
                     <figcaption>2016 · Requiem</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2015-verstohlen-geht-der-mond-auf.jpg"
-                        alt="Plakat Verstohlen geht der Mond auf">
+                        alt="Plakat Verstohlen geht der Mond auf 2015" width="600" height="750">
                     <figcaption>2015 · Verstohlen geht der Mond auf</figcaption>
                 </figure>
-                <figure><img loading="lazy" decoding="async" src="images/2015-matinee.jpg" alt="Plakat Matinée-Konzert">
+                <figure><img loading="lazy" decoding="async" src="images/2015-matinee.jpg" alt="Plakat Matinée-Konzert 2015" width="600" height="750">
                     <figcaption>2015 · Matinée-Konzert</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2015-oratorio-de-noel.jpg"
-                        alt="Plakat Oratorio de Noël">
+                        alt="Plakat Oratorio de Noël 2014" width="600" height="750">
                     <figcaption>2014 · Oratorio de Noël</figcaption>
                 </figure>
                 <figure><img loading="lazy" decoding="async" src="images/2014-fruehlingskonzert.jpg"
-                        alt="Plakat Frühlingskonzert">
+                        alt="Plakat Frühlingskonzert 2014" width="600" height="750">
                     <figcaption>2014 · Frühlingskonzert</figcaption>
                 </figure>
             </div>
