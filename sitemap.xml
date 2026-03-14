@@ -2,73 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jungerkammerchorberlin.de/</loc>
-    <lastmod>2025-03-09</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/index.html</loc>
-    <lastmod>2025-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://jungerkammerchorberlin.de/konzerte.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/konzerte/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/eindruecke.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/eindruecke/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/leitung.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/leitung/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/mitsingen.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/mitsingen/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/chorleben.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/chorleben/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/stimmbildung.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/stimmbildung/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/unterstuetzung.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/unterstuetzung/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jungerkammerchorberlin.de/willkommen.html</loc>
-    <lastmod>2025-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://jungerkammerchorberlin.de/aktive.html</loc>
-    <lastmod>2025-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://jungerkammerchorberlin.de/impressum.html</loc>
-    <lastmod>2025-03-09</lastmod>
+    <loc>https://jungerkammerchorberlin.de/impressum/</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
