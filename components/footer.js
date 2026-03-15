@@ -4,17 +4,17 @@ class AppFooter extends HTMLElement {
       <footer class="site-footer">
         <div class="footer-inner">
           <nav class="footer-nav" aria-label="Weitere Seiten">
-            <a href="index.html">Startseite</a>
+            <a href="/">Startseite</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="eindruecke.html">Eindrücke</a>
+            <a href="eindruecke">Eindrücke</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="leitung.html">Leitung</a>
+            <a href="leitung">Leitung</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="stimmbildung.html">Stimmbildung</a>
+            <a href="stimmbildung">Stimmbildung</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="unterstuetzung.html">Unterstützen</a>
+            <a href="unterstuetzung">Unterstützen</a>
             <span class="sep" aria-hidden="true">|</span>
-            <a href="impressum.html">Impressum</a>
+            <a href="impressum">Impressum</a>
           </nav>
         </div>
       </footer>
